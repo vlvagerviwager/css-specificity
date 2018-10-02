@@ -3,7 +3,8 @@
 _Originally written in 2016._
 
 I’ve worked with CSS before and have done the brilliant CSS selector tutorial at http://flukeout.github.io/, but I am definitely not an expert. Coming from a product where UX was not a priority doesn’t help. Here’s what I’ve learned in my first week of being a MEAN (stack, not personality) web developer.
-Basic selector logic
+
+## Basic selector logic
 
 a and b are CSS classes.
 
@@ -13,7 +14,8 @@ a and b are CSS classes.
     .a > .b = select an element with class b, which is a direct descendant of an element with a
 
 Elements which are direct descendants are exactly one level below, no more.
-Avoiding !important with CSS specificity
+
+## Avoiding !important with CSS specificity
 
 Putting !important at the end of CSS properties is bad. It brings the priority of that property to be the highest, i.e. it will override every other time that property is set, whether sensible or not. Arbitrarily overriding stuff will make your overall CSS messy and confusing. It’s useful for testing in developer tools, but don’t commit it.
 
@@ -28,7 +30,8 @@ e.g. properties within b are being overridden by something or the other. a has h
 The above is equivalent to .a.b. Don’t worry about the enclosing class: only the styling in .b will be applied.
 
 Why does this work? At the heart of it all is:
-Precedence of CSS selectors
+
+## Precedence of CSS selectors
 
 The least complicated explanation I could find is the section Calculating CSS Specificity Value in https://css-tricks.com/specifics-on-css-specificity/.
 
