@@ -39,7 +39,7 @@ The least complicated explanation I could find is the section Calculating CSS Sp
 
 TL;DR version of CSS selector precedence:
 
-1. Inline styling: there is no way to override this, except using !important, or maybe some jQuery/JS.
-1. #id
+1. Inline styling: there is no way to override this, except using `!important`, or maybe some jQuery/JS.
+1. `#id`
 1. class
-1. Native HTML tag/styling - e.g. <h1>, etc.
+1. Native HTML tag/styling - e.g. `<h1>`, etc.
