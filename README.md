@@ -11,7 +11,7 @@ a and b are CSS classes.
 -  `.a.b` = select an element with both classes on it
 - `.a, .b` = select an element with a or b on it
 - `.a .b` = select an element with class b, which is a descendant of an element with a
-- `.a > .b` = select an element with class b, which is a direct descendant of an element with a
+- `.a > .b` = select an element with class b, which is a **direct** descendant of an element with a
 
 Elements which are direct descendants are exactly one level below, no more.
 
@@ -35,7 +35,7 @@ Why does this work? At the heart of it all is:
 
 ## Precedence of CSS selectors
 
-The least complicated explanation I could find is the section Calculating CSS Specificity Value in https://css-tricks.com/specifics-on-css-specificity/.
+The least complicated explanation I could find is the section **Calculating CSS Specificity Value** in https://css-tricks.com/specifics-on-css-specificity/.
 
 TL;DR version of CSS selector precedence:
 
