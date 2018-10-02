@@ -8,10 +8,10 @@ I’ve worked with CSS before and have done the brilliant CSS selector tutorial 
 
 a and b are CSS classes.
 
-    .a.b = select an element with both classes on it
-    .a, .b = select an element with a or b on it
-    .a .b = select an element with class b, which is a descendant of an element with a
-    .a > .b = select an element with class b, which is a direct descendant of an element with a
+-  `.a.b` = select an element with both classes on it
+- `.a, .b` = select an element with a or b on it
+- `.a .b` = select an element with class b, which is a descendant of an element with a
+- `.a > .b` = select an element with class b, which is a direct descendant of an element with a
 
 Elements which are direct descendants are exactly one level below, no more.
 
@@ -23,9 +23,11 @@ How to not use important: wrap the class containing the property which is being 
 
 e.g. properties within b are being overridden by something or the other. a has high specificity:
 
+```css
 .a {
   .b { … }
 }
+```
 
 The above is equivalent to .a.b. Don’t worry about the enclosing class: only the styling in .b will be applied.
 
@@ -37,7 +39,7 @@ The least complicated explanation I could find is the section Calculating CSS Sp
 
 TL;DR version of CSS selector precedence:
 
-    Inline styling: there is no way to override this, except using !important, or maybe some jQuery/JS.
-    #id
-    class
-    Native HTML tag/styling - e.g. <h1>, etc.
+1. Inline styling: there is no way to override this, except using !important, or maybe some jQuery/JS.
+1. #id
+1. class
+1. Native HTML tag/styling - e.g. <h1>, etc.
